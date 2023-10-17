@@ -1,0 +1,61 @@
+import { factorial } from './factorial';
+	
+
+	describe('compute test suite', () => {
+		
+		it('Should return 0 if X is negative', () => {
+
+			const result = factorial(-1);
+		expect(result).toBe(0);
+
+		})
+
+		it('Should return 1 if X is 0', () => {
+
+			const result = factorial(0);
+		expect(result).toBe(1);
+
+		})
+
+
+		it('Should return 2 if X is 2', () => {
+
+			const result = factorial(2);
+		expect(result).toBe(2);
+
+		})
+
+
+		it('Should return 6 if X is 3', () => {
+
+			const result = factorial(3);
+		expect(result).toBe(6);
+
+		})
+
+
+		it('Should return 24 if X is 4', () => {
+
+			const result = factorial(4);
+		expect(result).toBe(24);
+
+		})
+
+
+		it('Should return 120 if X is 5', () => {
+
+			const result = factorial(5);
+		expect(result).toBe(120);
+
+		})
+
+
+		it('Should return 0 if X > 15', () => {
+
+			const result = factorial(16);
+		expect(result).toBe(0);
+
+		})
+
+	})
+		 
